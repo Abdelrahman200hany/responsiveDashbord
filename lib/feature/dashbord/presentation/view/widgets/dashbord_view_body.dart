@@ -1,5 +1,6 @@
 import 'package:dashboard/feature/dashbord/presentation/view/widgets/all_Expenses.dart';
 import 'package:dashboard/feature/dashbord/presentation/view/widgets/custom_drawer.dart';
+import 'package:dashboard/feature/dashbord/presentation/view/widgets/quick_invoice.dart';
 import 'package:flutter/material.dart';
 
 class DashBordViewBody extends StatelessWidget {
@@ -14,10 +15,12 @@ class DashBordViewBody extends StatelessWidget {
         SizedBox(width: 32),
 
         Expanded(
-          flex: 3,
+          flex: 2,
           child: Padding(
-            padding: const EdgeInsets.only(top: 40, right: 24, bottom: 32),
-            child: Column(children: [AllExpenses()]),
+            padding: const EdgeInsets.only(top: 20, right: 24),
+            child: Column(
+              children: [AllExpenses(), SizedBox(height: 15), QuickInvoice()],
+            ),
           ),
         ),
         Expanded(child: SizedBox()),
