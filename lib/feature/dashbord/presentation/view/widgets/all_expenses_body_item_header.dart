@@ -27,8 +27,8 @@ class AllExpensesBodyItemHeader extends StatelessWidget {
             child: SvgPicture.asset(
               image,
               colorFilter: ColorFilter.mode(
-                imageColor ?? const Color(0xff4eb7f2),
-                BlendMode.srcIn,
+                imageColor ?? const Color(0xff4eb7f2), BlendMode.srcIn
+               
               ),
             ),
           ),

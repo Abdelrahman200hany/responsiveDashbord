@@ -11,7 +11,7 @@ class AllExpenses extends StatelessWidget {
     return CustomContainer(
       child: Column(
         children: [
-          AllExpensesHeader(),
+          AllExpensesAndIncomeHeader(),
           SizedBox(height: 16),
           AllExpensesBodyList(),
         ],

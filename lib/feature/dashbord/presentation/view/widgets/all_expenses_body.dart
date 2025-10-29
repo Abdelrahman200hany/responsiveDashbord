@@ -25,44 +25,71 @@ class _AllExpensesBodyState extends State<AllExpensesBodyList> {
         int index = e.key;
         var item = e.value;
 
-        if (index == 1) {
-          return Expanded(
+        return Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (selectedIndex != index) {
+                selectedIndex = index;
+              }
+              setState(() {});
+            },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: GestureDetector(
-                onTap: () {
-                  if (selectedIndex != index) {
-                    selectedIndex = index;
-                  }
-
-                  setState(() {});
-                },
-
-                child: AllExpensesBodyItem(
-                  item: item,
-                  isActive: selectedIndex == index,
-                ),
-              ),
-            ),
-          );
-        } else {
-          return Expanded(
-            child: GestureDetector(
-              onTap: () {
-                if (selectedIndex != index) {
-                  selectedIndex = index;
-                }
-
-                setState(() {});
-              },
+              padding: index == 1
+                  ? EdgeInsets.symmetric(horizontal: 12)
+                  : EdgeInsets.zero,
               child: AllExpensesBodyItem(
                 item: item,
                 isActive: selectedIndex == index,
               ),
             ),
-          );
-        }
+          ),
+        );
       }).toList(),
     );
+
+    //  Row(
+    //   children: items.asMap().entries.map((e) {
+    //     int index = e.key;
+    //     var item = e.value;
+
+    //     if (index == 1) {
+    //       return Expanded(
+    //         child: Padding(
+    //           padding: const EdgeInsets.symmetric(horizontal: 8.0),
+    //           child: GestureDetector(
+    //             onTap: () {
+    //               if (selectedIndex != index) {
+    //                 selectedIndex = index;
+    //               }
+
+    //               setState(() {});
+    //             },
+
+    //             child: AllExpensesBodyItem(
+    //               item: item,
+    //               isActive: selectedIndex == index,
+    //             ),
+    //           ),
+    //         ),
+    //       );
+    //     } else {
+    //       return Expanded(
+    //         child: GestureDetector(
+    //           onTap: () {
+    //             if (selectedIndex != index) {
+    //               selectedIndex = index;
+    //             }
+
+    //             setState(() {});
+    //           },
+    //           child: AllExpensesBodyItem(
+    //             item: item,
+    //             isActive: selectedIndex == index,
+    //           ),
+    //         ),
+    //       );
+    //     }
+    //   }).toList(),
+    // );
   }
 }
