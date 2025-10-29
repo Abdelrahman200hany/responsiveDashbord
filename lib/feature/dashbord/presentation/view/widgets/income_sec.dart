@@ -5,8 +5,8 @@ import 'package:dashboard/feature/dashbord/presentation/view/widgets/income_data
 import 'package:flutter/material.dart';
 
 class IncomeSec extends StatelessWidget {
-  const IncomeSec({super.key});
-
+  const IncomeSec({super.key, required this.isExpanded});
+final bool isExpanded ;
   @override
   Widget build(BuildContext context) {
     return CustomContainer(
@@ -14,7 +14,7 @@ class IncomeSec extends StatelessWidget {
         children: [
           AllExpensesAndIncomeHeader(headerName: 'Income'),
           SizedBox(height: 8),
-          Expanded(child: IncomeStatics()),
+        isExpanded? Expanded(child: IncomeStatics()): IncomeStatics(),
         ],
       ),
     );
