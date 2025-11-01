@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dashboard/feature/dashbord/data/models/income_data_model.dart';
 import 'package:dashboard/feature/dashbord/presentation/view/widgets/income_data_item.dart';
 import 'package:flutter/material.dart';
@@ -25,16 +27,29 @@ class IncomeDataList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: 4,
+        log(MediaQuery.sizeOf(context).width.toString());
 
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 6),
-          child: IncomeDataItem(item: items[index]),
-        );
-      },
+    return Column(
+      children: items
+          .map(
+            (e) => Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: IncomeDataItem(item: e),
+            ),
+          )
+          .toList(),
     );
+
+    // return ListView.builder(
+    //   shrinkWrap: true,
+    //   itemCount: 4,
+
+    //   itemBuilder: (context, index) {
+    //     return Padding(
+    //       padding: const EdgeInsets.only(bottom: 6),
+    //       child: IncomeDataItem(item: items[index]),
+    //     );
+    //   },
+    // );
   }
 }

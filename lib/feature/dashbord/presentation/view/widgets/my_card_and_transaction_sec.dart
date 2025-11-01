@@ -12,7 +12,13 @@ class MYCardAndTransactionHistorySec extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
 
-        children: [Mycard(), Divider(height: 40), TransactionHistory()],
+        children: [Mycard(),
+        
+         Divider(height: 40),
+         
+         
+          TransactionHistory()
+          ],
       ),
     );
   }

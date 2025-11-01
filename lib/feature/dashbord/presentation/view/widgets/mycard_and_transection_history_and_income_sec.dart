@@ -7,9 +7,13 @@ class MyCardAndTransectionHitoryAndIncomeSec extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column( 
+    return Column(
+      children: [
+        MYCardAndTransactionHistorySec(),
 
-      children: [MYCardAndTransactionHistorySec() , SizedBox(height: 16,),Expanded(child: IncomeSec(isExpanded: true,))],
+        SizedBox(height: 16),
+        Expanded(child: IncomeSec(isExpanded: true)),
+      ],
     );
   }
 }
