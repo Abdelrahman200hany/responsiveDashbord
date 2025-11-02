@@ -34,7 +34,7 @@ class _IncomeCartState extends State<IncomeCart> {
           title: currentTouchedSec == 0 ? 'Direct' : '40%',
           value: 40,
           titlePositionPercentageOffset: currentTouchedSec == 0 ? 1.5 : 0,
-          titleStyle: AppStyles.styleMedium16.copyWith(color: Colors.white),
+          titleStyle: AppStyles.styleMedium16(context).copyWith(color: Colors.white),
 
           showTitle: false,
         ),
@@ -43,7 +43,7 @@ class _IncomeCartState extends State<IncomeCart> {
           color: const Color(0xff4eb7f2),
           title: currentTouchedSec == 1 ? 'Referral' : '25%',
           titlePositionPercentageOffset: currentTouchedSec == 1 ? 1.5 : 0,
-          titleStyle: AppStyles.styleMedium16.copyWith(color: Colors.white),
+          titleStyle: AppStyles.styleMedium16(context).copyWith(color: Colors.white),
 
           value: 25,
           showTitle: false,
@@ -53,7 +53,7 @@ class _IncomeCartState extends State<IncomeCart> {
           color: const Color(0xff064061),
           title: currentTouchedSec == 2 ? 'Socail' : '20%',
           titlePositionPercentageOffset: currentTouchedSec == 2 ? 1.5 : 0,
-          titleStyle: AppStyles.styleMedium16.copyWith(color: Colors.white),
+          titleStyle: AppStyles.styleMedium16(context).copyWith(color: Colors.white),
           value: 20,
           showTitle: false,
         ),
@@ -62,7 +62,7 @@ class _IncomeCartState extends State<IncomeCart> {
           color: const Color(0xffe2decd),
           title: currentTouchedSec == 3 ? 'Others' : '15%',
           titlePositionPercentageOffset: currentTouchedSec == 3 ? 1.5 : 0,
-          titleStyle: AppStyles.styleMedium16.copyWith(color: Colors.white),
+          titleStyle: AppStyles.styleMedium16(context).copyWith(color: Colors.white),
 
           value: 15,
           showTitle: false,
@@ -114,8 +114,8 @@ class _IncomeCartData extends State<IncomeCartData> {
           color: const Color.fromARGB(255, 97, 179, 30),
           title: currentTouchedSec == 0 ? 'Direct' : '40%',
           value: 40,
-          titlePositionPercentageOffset: currentTouchedSec == 0 ? 1.5 : 0,
-          titleStyle: AppStyles.styleRegular16.copyWith(
+          titlePositionPercentageOffset: currentTouchedSec == 0 ? 1.5 : null,
+          titleStyle: AppStyles.styleRegular16(context).copyWith(
             color: currentTouchedSec == 0 ? Colors.black : Colors.white,
           ),
 
@@ -125,8 +125,8 @@ class _IncomeCartData extends State<IncomeCartData> {
           radius: currentTouchedSec == 1 ? 50 : 40,
           color: const Color(0xff4eb7f2),
           title: currentTouchedSec == 1 ? 'Referral' : '25%',
-          titlePositionPercentageOffset: currentTouchedSec == 1 ? 1.8 : 0,
-          titleStyle: AppStyles.styleRegular16.copyWith(
+          titlePositionPercentageOffset: currentTouchedSec == 1 ? 1.8 : null,
+          titleStyle: AppStyles.styleRegular16(context).copyWith(
             color: currentTouchedSec == 1 ? Colors.black : Colors.white,
           ),
 
@@ -137,8 +137,8 @@ class _IncomeCartData extends State<IncomeCartData> {
           badgePositionPercentageOffset: 1,
           color: const Color(0xff064061),
           title: currentTouchedSec == 2 ? 'Social' : '20%',
-          titlePositionPercentageOffset: currentTouchedSec == 2 ? 1.3 : 0,
-          titleStyle: AppStyles.styleRegular16.copyWith(
+          titlePositionPercentageOffset: currentTouchedSec == 2 ? 1.3 : null,
+          titleStyle: AppStyles.styleRegular16(context).copyWith(
             color: currentTouchedSec == 2 ? Colors.black : Colors.white,
             
           ),
@@ -149,8 +149,8 @@ class _IncomeCartData extends State<IncomeCartData> {
           radius: currentTouchedSec == 3 ? 50 : 40,
           color: const Color(0xffe2decd),
           title: currentTouchedSec == 3 ? 'Others' : '15%',
-          titlePositionPercentageOffset: currentTouchedSec == 3 ? 1.6 : 0,
-          titleStyle: AppStyles.styleRegular16.copyWith(
+          titlePositionPercentageOffset: currentTouchedSec == 3 ? 1.6 : null,
+          titleStyle: AppStyles.styleRegular16(context).copyWith(
             color: currentTouchedSec == 3 ? Colors.black : Colors.white,
           ),
 

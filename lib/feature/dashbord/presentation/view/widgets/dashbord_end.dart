@@ -20,7 +20,7 @@ class DrawerEnd extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 20),
             child: ListTile(
               leading: SvgPicture.asset(Assets.imagesSettings),
-              title: Text('Setting system', style: AppStyles.styleRegular16),
+              title: Text('Setting system', style: AppStyles.styleRegular16(context)),
             ),
           ),
       
@@ -28,7 +28,7 @@ class DrawerEnd extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 40),
             child: ListTile(
               leading: SvgPicture.asset(Assets.imagesLogout),
-              title: Text('Logout account', style: AppStyles.styleRegular16),
+              title: Text('Logout account', style: AppStyles.styleRegular16(context)),
             ),
           ),
         ],

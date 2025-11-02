@@ -18,8 +18,8 @@ class UserInfo extends StatelessWidget {
       elevation:0.2,
       child: ListTile(
         leading: SvgPicture.asset(imageUrl),
-        title: Text(title, style: AppStyles.styleSemiBold16),
-        subtitle: Text(subtitle, style: AppStyles.styleRegular14),
+        title: Text(title, style: AppStyles.styleSemiBold16(context)),
+        subtitle: Text(subtitle, style: AppStyles.styleRegular14(context)),
       ),
     );
   }

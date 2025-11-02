@@ -14,7 +14,7 @@ class TransactionHistory extends StatelessWidget {
       children: [
         TransactionHistoryHeader(),
         SizedBox(height: 20),
-        Text('13 April 2022', style: AppStyles.styleMedium16),
+        Text('13 April 2022', style: AppStyles.styleMedium16(context)),
         SizedBox(height: 10),
         TransactionHistoryList(), 
       ],

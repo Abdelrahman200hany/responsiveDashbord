@@ -30,7 +30,7 @@ class IncomeStatics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    return width >= 1300 && width < 1585
+    return width >= 1300 && width < 1800
         ? IncomeCartData()
         : Row(
             mainAxisAlignment: MainAxisAlignment.center,

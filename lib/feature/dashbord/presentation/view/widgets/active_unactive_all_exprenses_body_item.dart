@@ -25,19 +25,19 @@ class UnActiveAllExpensesBodyItem extends StatelessWidget {
 
           Text(
             item.title,
-            style: AppStyles.styleSemiBold16.copyWith(
+            style: AppStyles.styleSemiBold16(context).copyWith(
               color: const Color(0xff064061),
             ),
           ),
           SizedBox(height: 8),
           Text(
             'April 2022',
-            style: AppStyles.styleRegular14.copyWith(color: Color(0xffaaaaaa)),
+            style: AppStyles.styleRegular14(context).copyWith(color: Color(0xffaaaaaa)),
           ),
           SizedBox(height: 10),
           Text(
             r'$20,129',
-            style: AppStyles.styleSemiBold24.copyWith(
+            style: AppStyles.styleSemiBold24(context).copyWith(
               color: const Color(0xff4eb7f2),
             ),
           ),
@@ -73,19 +73,19 @@ class ActiveAllExpensesBodyItem extends StatelessWidget {
 
           Text(
             item.title,
-            style: AppStyles.styleSemiBold16.copyWith(color: Colors.white),
+            style: AppStyles.styleSemiBold16(context).copyWith(color: Colors.white),
           ),
           SizedBox(height: 8),
           Text(
             'April 2022',
-            style: AppStyles.styleRegular14.copyWith(
+            style: AppStyles.styleRegular14(context).copyWith(
               color: const Color(0xfffafafa),
             ),
           ),
           SizedBox(height: 10),
           Text(
             r'$20,129',
-            style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),
+            style: AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
           ),
         ],
       ),

@@ -53,7 +53,7 @@ class _MycardBalanceState extends State<Mycard> {
       crossAxisAlignment: CrossAxisAlignment.start,
 
       children: [
-        Text('My card', style: AppStyles.styleSemiBold20),
+        Text('My card', style: AppStyles.styleSemiBold20(context)),
         SizedBox(height: 20),
         MyCardBalanceDetailsPageView(controller: controller),
         SizedBox(height: 16),
