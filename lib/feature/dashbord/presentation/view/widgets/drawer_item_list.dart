@@ -44,7 +44,7 @@ class _DrawerItemListState extends State<DrawerItemList> {
         },
 
         child: Padding(
-          padding: EdgeInsets.only(bottom: 20),
+          padding: EdgeInsets.only(bottom: 10),
 
           child: DrawerItem(item: items[index], isActive: activeIndex == index),
         ),

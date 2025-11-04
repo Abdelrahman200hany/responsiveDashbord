@@ -11,7 +11,7 @@ class UnActiveAllExpensesBodyItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: Colors.white,
@@ -23,22 +23,34 @@ class UnActiveAllExpensesBodyItem extends StatelessWidget {
           AllExpensesBodyItemHeader(image: item.image),
           SizedBox(height: 34),
 
-          Text(
-            item.title,
-            style: AppStyles.styleSemiBold16(context).copyWith(
-              color: const Color(0xff064061),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              item.title,
+              style: AppStyles.styleSemiBold16(context).copyWith(
+                color: const Color(0xff064061),
+              ),
             ),
           ),
           SizedBox(height: 8),
-          Text(
-            'April 2022',
-            style: AppStyles.styleRegular14(context).copyWith(color: Color(0xffaaaaaa)),
+          FittedBox(
+               fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'April 2022',
+              style: AppStyles.styleRegular14(context).copyWith(color: Color(0xffaaaaaa)),
+            ),
           ),
           SizedBox(height: 10),
-          Text(
-            r'$20,129',
-            style: AppStyles.styleSemiBold24(context).copyWith(
-              color: const Color(0xff4eb7f2),
+          FittedBox(
+               fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              r'$20,129',
+              style: AppStyles.styleSemiBold24(context).copyWith(
+                color: const Color(0xff4eb7f2),
+              ),
             ),
           ),
         ],
@@ -55,7 +67,7 @@ class ActiveAllExpensesBodyItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: const Color(0xff4eb7f2),
@@ -71,21 +83,33 @@ class ActiveAllExpensesBodyItem extends StatelessWidget {
           ),
           SizedBox(height: 34),
 
-          Text(
-            item.title,
-            style: AppStyles.styleSemiBold16(context).copyWith(color: Colors.white),
+          FittedBox(
+               fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              item.title,
+              style: AppStyles.styleSemiBold16(context).copyWith(color: Colors.white),
+            ),
           ),
           SizedBox(height: 8),
-          Text(
-            'April 2022',
-            style: AppStyles.styleRegular14(context).copyWith(
-              color: const Color(0xfffafafa),
+          FittedBox(
+               fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'April 2022',
+              style: AppStyles.styleRegular14(context).copyWith(
+                color: const Color(0xfffafafa),
+              ),
             ),
           ),
           SizedBox(height: 10),
-          Text(
-            r'$20,129',
-            style: AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
+          FittedBox(
+               fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              r'$20,129',
+              style: AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),

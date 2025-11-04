@@ -23,7 +23,7 @@ class MYCardDetails extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.only(
-                top: 20,
+                top: 8,
                 left: 31,
                 right: 60 - 24,
               ),
@@ -36,7 +36,7 @@ class MYCardDetails extends StatelessWidget {
               subtitle: Text('Syah Bandi', style: AppStyles.styleMedium20(context)),
               trailing: SvgPicture.asset(Assets.imagesGallery),
             ),
-            Spacer(),
+        Expanded(flex: 3, child: SizedBox()),
             Padding(
               padding: EdgeInsetsGeometry.only(right: 24),
               child: Column(
@@ -53,7 +53,7 @@ class MYCardDetails extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 8),
+                  SizedBox(height: 6),
                   FittedBox(
                     alignment: Alignment.centerRight,
 

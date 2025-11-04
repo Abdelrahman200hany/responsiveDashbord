@@ -15,10 +15,14 @@ class UserInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation:0.2,
+      elevation: 0.2,
       child: ListTile(
         leading: SvgPicture.asset(imageUrl),
-        title: Text(title, style: AppStyles.styleSemiBold16(context)),
+        title: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(title, style: AppStyles.styleSemiBold16(context)),
+        ),
         subtitle: Text(subtitle, style: AppStyles.styleRegular14(context)),
       ),
     );

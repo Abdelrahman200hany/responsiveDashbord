@@ -1,3 +1,4 @@
+
 import 'package:dashboard/core/uitls/app_size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -104,6 +105,15 @@ double getResponsiveFontSize(BuildContext context, double fontSize) {
 }
 
 double getScaleFactor(context) {
+
+// if i want to don't use context or meadiaquery 
+// var platformDispatcher =PlatformDispatcher.instance;
+// var physicalWidth = platformDispatcher.views.first.physicalSize.width;
+// var  devicePixelRatio = platformDispatcher.views.first.devicePixelRatio;
+// var width = physicalWidth / devicePixelRatio;
+
+
+
   double width = MediaQuery.of(context).size.width;
 
   if (width < AppSizeConfig.tablet) {
